@@ -1,3 +1,7 @@
+snippet import "import" b
+import ${1:Name} from '${2:name}';
+endsnippet
+
 snippet ir "import React" b
 import React from 'react';
 endsnippet
@@ -8,10 +12,29 @@ export default class ${1:ClassName} extends React.Component {
 }
 endsnippet
 
+snippet constructor "Constructor" b
+constructor(props) {
+	super(props);
+	${1}
+}
+endsnippet
+
 snippet render "React render method" b
 render() {
   return(
 	  ${1}
 	);
 }
+endsnippet
+
+snippet t "tag" b
+<$1>
+  ${2}
+</$1>
+endsnippet
+
+snippet t. "tag className" b
+<${1:div} className="${2}">
+	${3}
+</$1>
 endsnippet
