@@ -1,7 +1,32 @@
+# general javascript snippets
+snippet var "var" b
+var ${1:varName} = ${2:value};
+endsnippet
+
+# es6 snippets
+snippet let "let" b
+let ${1:letName} = ${2:value};
+endsnippet
+
+snippet const "const" b
+const ${1:constName} = ${2:value};
+endsnippet
+
 snippet import "import" b
 import ${1:Name} from '${2:name}';
 endsnippet
 
+snippet cm "es6 class method" b
+${1:methodName}($2) {
+	$3
+}
+endsnippet
+
+snippet cl "console.log" b
+console.log($1);
+endsnippet
+
+# react snippets
 snippet ir "import React" b
 import React from 'react';
 endsnippet
