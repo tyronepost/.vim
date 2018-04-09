@@ -1,0 +1,98 @@
+snippet html "html document" b
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+	$0
+</body>
+</html>
+endsnippet
+
+snippet form "form" b
+  <form action="${1:action}" method="${2:method}">
+	$0
+  </form>
+endsnippet
+
+snippet input "input" b
+<input type="${1:type}"$0/>
+endsnippet
+
+# attributes
+snippet cl "class"
+class="$1"$0
+endsnippet
+
+snippet id "id"
+id="$1"$0
+endsnippet
+
+snippet lang "lang" b
+lang="$1"$0
+endsnippet
+
+# structural markup
+snippet h1 "h1" b
+<h1$2>$1</h1>
+endsnippet
+
+snippet h2 "h2" b
+<h2$2>$1</h2>
+endsnippet
+
+snippet h3 "h3" b
+<h3$2>$1</h3>
+endsnippet
+
+snippet h4 "h4" b
+<h4$2>$1</h4>
+endsnippet
+
+snippet h5 "h5" b
+<h5$2>$1</h5>
+endsnippet
+
+snippet h6 "h6" b
+<h6$2>$1</h6>
+endsnippet
+
+
+snippet br "br" b
+<br/>
+endsnippet
+
+snippet hr "hr" b
+<hr/>
+endsnippet
+
+snippet div "div" b
+<div$2>$1</div>
+endsnippet
+
+snippet p "p" b
+<p$2>
+	$1
+</p>
+endsnippet
+
+snippet table "table" b
+<table$2>
+	$1
+</table>
+endsnippet
+
+snippet thead "thead" b
+<thead$2>
+	$1
+</thead>
+endsnippet
+
+snippet tfoot "tfoot" b
+<tfoot$2>
+	$1
+</tfoot>
+endsnippet
+

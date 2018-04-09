@@ -1,0 +1,31 @@
+snippet fsl "frozen_string_literal: true" b
+# frozen_string_literal: true
+endsnippet
+
+snippet def "method declaration" b
+def ${1:method_name}
+	$2
+end
+endsnippet
+
+snippet if "if" b
+if ${1:predicate}
+	$2
+end
+endsnippet
+
+snippet do "do .. end"
+do
+	$1
+end
+endsnippet
+
+snippet dov "do |v| .. end"
+do |${1:v}|
+	$2
+end
+endsnippet
+
+snippet b "{ |v|  }"
+{ |${1:v}| $2 }
+endsnippet
