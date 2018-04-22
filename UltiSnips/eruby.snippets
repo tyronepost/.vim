@@ -1,0 +1,33 @@
+extends html
+
+snippet = "<%= %>" i
+<%= ${1} %>
+endsnippet
+
+snippet fw "form_with" b
+<%= form_with scope: ${1:scope} do |form| %>
+	$0
+<% end %>
+endsnippet
+
+snippet fl "form.label" b
+<%= form.label ${1:field} %>$0
+endsnippet
+
+snippet ftf "form.text_field" b
+<%= form.text_field ${1:field} %>$0
+endsnippet
+
+snippet fta "form.text_area" b
+<%= form.text_area ${1:field} %>$0
+endsnippet
+
+snippet fs "form.submit" b
+<%= form.submit %>$0
+endsnippet
+
+snippet do "erb do block" b
+<% ${1:collection} do |${2:object}| %>
+	$3
+<% end %>
+endsnippet
